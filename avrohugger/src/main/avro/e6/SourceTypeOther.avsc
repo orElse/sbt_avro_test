@@ -1,0 +1,7 @@
+{
+    "namespace": "example",
+    "type": "enum",
+    "name": "SourceTypeOther",
+    "symbols": ["Source1", "Source2"],
+    "doc": "sources of raw data"
+}

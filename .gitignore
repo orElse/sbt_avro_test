@@ -1,0 +1,12 @@
+**/.DS_Store
+
+### VSCode artifacts
+.history
+.ignore
+
+### SBT artifacts
+**/target
+project/project
+### Idea artifacts
+.idea
+*.iml
