@@ -12,7 +12,8 @@ lazy val avroModels = (project in file("."))
   .settings(
     name := "AvroTest",
     libraryDependencies ++= Seq(
-      "org.apache.avro" % "avro" % "1.8.2"
+      "org.apache.avro" % "avro" % "1.8.2" // "sbt-avrohugger" % "2.0.0-RC18"
+      // "org.apache.avro" % "avro" % "1.9.1" // "sbt-avrohugger" % "2.0.0-RC22"
     )
   )
   .settings(
