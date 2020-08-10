@@ -7,7 +7,7 @@ ThisBuild / organization := "com.example"
 ThisBuild / version      := "0.1.0-SNAPSHOT"
 
 lazy val avroModels = (project in file("."))
-  .enablePlugins(CloudflowLibraryPlugin)
+//  .enablePlugins(CloudflowLibraryPlugin)
   .settings(
     name := "AvroTest"
   )
