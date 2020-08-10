@@ -17,18 +17,18 @@ lazy val avroModels = (project in file("."))
   )
   .settings(
     Seq(
-      Compile / sourceGenerators += (avroScalaGenerate in Compile).taskValue,ﬂ
+      Compile / sourceGenerators += (avroScalaGenerateSpecific in Compile).taskValue,
 
       Compile / managedSourceDirectories += (Compile / avroSpecificScalaSource).value,
       Compile / managedSourceDirectories += (Compile / crossTarget).value / "java_avro",
       Compile / managedSourceDirectories += (Compile / crossTarget).value / "scalapb",
 
-      avroScalaCustomTypes in Compile := {
-        avrohugger.format.SpecificRecord.defaultTypes.copy(
-          // array = avrohugger.types.ScalaVector,
-          record = avrohugger.types.ScalaCaseClassWithSchema
-         )
-      }
+//      avroScalaCustomTypes in Compile := {
+//        avrohugger.format.SpecificRecord.defaultTypes.copy(
+//          // array = avrohugger.types.ScalaVector,
+//          record = avrohugger.types.ScalaCaseClassWithSchema
+//         )
+//      }
     )
   )
 //  .settings( // for java enums
