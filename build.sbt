@@ -22,12 +22,13 @@ lazy val avroModels = (project in file("."))
 
       Compile / managedSourceDirectories += (Compile / avroSpecificScalaSource).value,
       Compile / managedSourceDirectories += (Compile / crossTarget).value / "java_avro",
-      Compile / managedSourceDirectories += (Compile / crossTarget).value / "scalapb",
+      Compile / managedSourceDirectories += (Compile / crossTarget).value / "scalapb"
 
-//      avroScalaCustomTypes in Compile := {
+//      avroScalaSpecificCustomTypes in Compile := {
 //        avrohugger.format.SpecificRecord.defaultTypes.copy(
 //          // array = avrohugger.types.ScalaVector,
-//          record = avrohugger.types.ScalaCaseClassWithSchema
+//          // record = avrohugger.types.ScalaCaseClassWithSchema
+//          enum = avrohugger.types.EnumAsScalaString
 //         )
 //      }
     )

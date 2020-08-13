@@ -1,0 +1,13 @@
+{
+    "namespace": "example",
+    "type": "record",
+    "name": "WithSourceType",
+    "fields":[
+         {
+            "name": "name", "type": "string"
+         },
+         {
+            "name": "sourceType", "type": "example.SourceType"
+         }
+    ]
+}
